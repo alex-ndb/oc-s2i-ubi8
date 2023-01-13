@@ -1,4 +1,4 @@
-FROM it-nb-203:5000/library/ubi8-init-original
+FROM registry.access.redhat.com/ubi8-init:latest
 MAINTAINER ohubohu@tuk.tam
 
 RUN yum install -y httpd && yum clean all && systemctl enable httpd 
